@@ -62,8 +62,9 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('extras', function () {
-    return gulp.src(['app/*.*', '!app/*.html'], { dot: true })
-        .pipe(gulp.dest('dist'));
+    gulp.src(['app/*.*', '!app/*.html'], { dot: true }).pipe(gulp.dest('dist'));
+    gulp.src('./app/lib/**/*').pipe(gulp.dest('./dist/lib'));
+    gulp.src('./app/pdf/**/*.pdf').pipe(gulp.dest('./dist/pdf'));
 });
 
 gulp.task('clean', function () {
