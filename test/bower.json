@@ -1,5 +1,5 @@
 {
-  "name": "patterndeck",
+  "name": "product-foundry-site",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",

@@ -1,1 +1,1 @@
-rsync -avz dist/ patterndeck.com@46.4.87.236:
+rsync -avz dist/ product-foundry.com@46.4.87.236:
