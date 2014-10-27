@@ -273,8 +273,8 @@ header {
 	
 }
 
-header .pattern {
-	background: url(../img/pattern.svg) center center; background-size: 63px 63px;
+header .patterns {
+	background: url(../img/patterns.svg) center center; background-size: 63px 63px;
 }
 
 header .intro-text {
@@ -352,19 +352,19 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#pattern .pattern-item {
+#patterns .patterns-item {
     right: 0;
     margin: 0 -10px 15px;
 }
 
-#pattern .pattern-item .pattern-link {
+#patterns .patterns-item .patterns-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#pattern .pattern-item .pattern-link .pattern-hover {
+#patterns .patterns-item .patterns-link .patterns-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -375,11 +375,11 @@ section h3.section-subheading {
     transition: all ease .5s;
 }
 
-#pattern .pattern-item .pattern-link .pattern-hover:hover {
+#patterns .patterns-item .patterns-link .patterns-hover:hover {
     opacity: 1;
 }
 
-#pattern .pattern-item .pattern-link .pattern-hover .pattern-hover-content {
+#patterns .patterns-item .patterns-link .patterns-hover .patterns-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -390,16 +390,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#pattern .pattern-item .pattern-link .pattern-hover .pattern-hover-content i {
+#patterns .patterns-item .patterns-link .patterns-hover .patterns-hover-content i {
     margin-top: -12px;
 }
 
-#pattern .pattern-item .pattern-link .pattern-hover .pattern-hover-content h3,
-#pattern .pattern-item .pattern-link .pattern-hover .pattern-hover-content h4 {
+#patterns .patterns-item .patterns-link .patterns-hover .patterns-hover-content h3,
+#patterns .patterns-item .patterns-link .patterns-hover .patterns-hover-content h4 {
     margin: 0;
 }
 
-#pattern .pattern-item .pattern-caption {
+#patterns .patterns-item .patterns-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -407,23 +407,23 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#pattern .pattern-item .pattern-caption h4 {
+#patterns .patterns-item .patterns-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#pattern .pattern-item .pattern-caption p {
+#patterns .patterns-item .patterns-caption p {
     margin: 0;
     font-size: 16px;
     font-style: italic;
 }
 
-#pattern * {
+#patterns * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #pattern .pattern-item {
+    #patterns .patterns-item {
         margin: 0 -10px 30px;
     }
 }
@@ -704,7 +704,7 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-.pattern-modal .modal-content {
+.patterns-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -715,31 +715,31 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
-.pattern-modal .modal-content h2 {
+.patterns-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
-.pattern-modal .modal-content p {
+.patterns-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.pattern-modal .modal-content p.item-intro {
+.patterns-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-size: 16px;
     font-style: italic;
 }
 
-.pattern-modal .modal-content ul.list-inline {
+.patterns-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
-.pattern-modal .modal-content img {
+.patterns-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.pattern-modal .close-modal {
+.patterns-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -749,11 +749,11 @@ ul.social-buttons li a:active {
     cursor: pointer;
 }
 
-.pattern-modal .close-modal:hover {
+.patterns-modal .close-modal:hover {
     opacity: .3;
 }
 
-.pattern-modal .close-modal .lr {
+.patterns-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -764,7 +764,7 @@ ul.social-buttons li a:active {
     transform: rotate(45deg);
 }
 
-.pattern-modal .close-modal .lr .rl {
+.patterns-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
