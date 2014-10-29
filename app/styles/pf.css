@@ -36,7 +36,7 @@ a.active {
 }
 
 a {
-    color: #00259a;
+    color: #333;
 }
 
 a:hover,
@@ -686,9 +686,9 @@ ul.social-buttons li a {
     outline: 0;
     color: #fff;
     background-color: #222;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s;
 }
 
 ul.social-buttons li a:hover,
@@ -776,12 +776,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #00259a;
+    background: #ccc;
 }
 
 ::selection {
     text-shadow: none;
-    background: #00259a;
+    background: #ccc;
 }
 
 img::selection {

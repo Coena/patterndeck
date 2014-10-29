@@ -172,7 +172,8 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #fff;
+    opacity: 0.9;
 }
 
 .navbar-default .navbar-brand {
@@ -253,7 +254,8 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #fff;
+        opacity: 0.9;
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -277,7 +279,7 @@ header {
 
 
 header .intro-text {
-    padding-top: 30px;
+    padding-top: 8px;
     padding-bottom: 20px;
 
 }
@@ -298,7 +300,7 @@ header .intro-text .intro-heading {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 30px;
+        padding-top: 8px;
         padding-bottom: 20px;
     }
 
@@ -311,15 +313,15 @@ header .intro-text .intro-heading {
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
         font-size: 28px;
         font-weight: 300;
-        line-height: 75px;
+        line-height: 40px;
     }
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 section h2.section-heading {
@@ -773,12 +775,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #00259a;
+    background: #cccccc;
 }
 
 ::selection {
     text-shadow: none;
-    background: #00259a;
+    background: #cccccc;
 }
 
 img::selection {
