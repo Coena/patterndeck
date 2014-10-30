@@ -273,8 +273,8 @@ header {
 	
 }
 
-header .patterns {
-	background: url(../img/patterns.svg) center center; background-size: 63px 63px;
+header .pattern {
+	background: url(../img/pattern.svg) center center; background-size: 63px 63px;
 }
 
 header .intro-text {
