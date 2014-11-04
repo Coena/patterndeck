@@ -362,7 +362,7 @@ section h3.section-subheading {
     position: relative;
     margin: 0 auto;
     max-width: 400px;
-    min-height: 220px;
+    min-height: 240px;
     background-color: #ffffff;
 }
 
@@ -394,6 +394,7 @@ section h3.section-subheading {
 
 #patterns .patterns-item .patterns-link .patterns-hover .patterns-hover-content i {
     margin-top: -12px;
+    text-align: center;
 }
 
 #patterns .patterns-item .patterns-link .patterns-hover .patterns-hover-content h3,
