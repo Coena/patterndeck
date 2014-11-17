@@ -1,0 +1,118 @@
+@import 'mixins';
+@import 'variables';
+
+#patterns {
+  .section-title {
+    height: 240px;
+    margin:0;
+    transform-style: preserve-3d;
+    text-align: center;
+    h1 {
+      transform: translateY(-10%);
+    }
+  }
+  .patterns-link {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 280px;
+    overflow: hidden;
+    background-color: #fff;
+    margin:0 auto 20px;
+    color: #797984;
+    .patterns-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      background-color: rgba(107,107,120,.7);
+      transition: all ease .5s;
+      &:hover {
+        opacity: 1;
+      }
+      i {
+        color: #fff;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+      }
+    }
+    .patterns-caption {
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+      h4 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+        font-style: italic;
+        margin: 0;
+      }
+    }
+  }
+
+}
+
+.patterns-modal {
+  header, .navbar-default.navbar-shrink {
+    background: #ffffff;
+  }
+  .modal-content {
+    box-shadow: none;
+    border: 0;
+    min-height: 100%;
+  }
+  header {
+    text-shadow: none;
+    color: #3e3e3e;
+    overflow: hidden;
+    position: relative;
+    .intro-text {
+      padding: 0;
+      .intro-heading {
+        @include set(font-size, (xs: 24px, sm: 28px, md: 28px, lg: 28px) );
+        @include set(line-height, (xs: 50px, sm: 40px, md: 40px, lg: 40px) );
+        font-weight: 300;
+        margin-bottom: 25px;
+      }
+      .intro-lead-in {
+        text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        @include set(font-size, (xs: 16px, sm: 18px, md: 18px, lg: 18px) );
+        @include set(line-height, (xs: 22px, sm: 40px, md: 40px, lg: 40px) );
+        font-weight: 100;
+        margin-bottom: 25px;
+      }
+    }
+  }
+  hr {
+    margin: 0 0 6px;
+    border: 0;
+    border-top: 4px solid #333;
+  }
+  section {
+    @include set(padding, (xs: 15px 15px 70px, sm: 20px 20px 70px, md: 30px 30px 70px, lg: 50px 50px 70px) );
+  }
+  .navbar-fixed-bottom {
+    min-height: 60px;
+    background-color: rgba(255,255,255,0.7) !important;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.15);
+    .container {
+      padding-top: 10px;
+    }
+  }
+  .text-center {
+    .img-responsive {
+      margin: 0 auto;
+    }
+  }
+  .patterns-notes {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+

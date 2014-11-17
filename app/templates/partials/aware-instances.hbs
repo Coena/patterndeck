@@ -1,0 +1,67 @@
+<div class="patterns-modal modal fade" id="patternsModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-4">
+            <div class="intro-text">
+              <hr>
+              <div class="intro-lead-in">Component Behavior</div>
+              <div class="intro-heading">Aware Instances</div>
+              <img src="images/maturity-1.svg" width="20px">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-8">
+            <p class="text-center"><img src="images/patterns/awareinstances.jpg" alt="Aware Instances" class="img-responsive" /></p>
+            <div id="patternsModal2-content1">
+            </div>
+            <script>
+              document.getElementById('patternsModal2-content1').innerHTML =
+                marked('*Components are aware of their role in fulfilling products, and product instances contain their own unique semantics. Awareness isn’t elsewhere, but with the component itself.*');
+            </script>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Services Section -->
+    <section>
+      <div class="container">
+        <div class="row text-left">
+          <div class="col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4">
+            <div id="patternsModal2-content2"></div>
+            <script>
+              document.getElementById('patternsModal2-content2').innerHTML =
+                marked('A product instance, or a product as a customer experiences it, is realized through several systems, ranging from configuring access in a network switch to a customer record in a customer-relationship management system. Each of these systems have a part in constructing the customer’s experience of the product. Network equipment in telecommunications environments historically have a lot of variation, often supporting standards from the 1980s such as GSM to contemporary standards such as LTE. With the move to an all Internet Protocol (IP) network, where will be an even  greater diversity and volume of products with providers moving beyond voice and data to content (music, movies, books, education, etc.), several configurations will be possible in each of these system. This will lead to high-levels of complexity in managing all of these combinations. Processes for provisioning products need to anticipate several eventualities, to the extent that process definitions need to be conscious of the state of several network elements and systems simultaneously. When controllers are used to control the number of states, the controllers need equal or greater knowledge than the total number of states. Similarly when product, customer, and resource specifications are used to define the behaviour of instances, the specifications need knowledge equal or greater than the sum of instance variations. When provisioning processes are treated as end-to-end transactions, errors in the process necessitate restorations of original system configurations before the product was provisioned through an expensive rollback. Rule-bases for individual situations such product pricing (promotions, discounts, fees, allowances, commissions, etc.) or permitted products given an individual’s installed product base further increase complexity. In the highly distributed environment of telecommunications organizations, several components are able to change each other’s states, and controllers and specifications need to consider meaningful combinations of state. However if the controllers and specifications are not aware of a combination of state, which can number in the several thousands, systems recovery can only be established through restarts. Given that stable systems require their control mechanism to address as many variations of state as possible, creating centralized controllers and single points of truth only increase the complexity, not reduce it. “Things fall apart, the centre cannot hold.”<br /><br />Therefore make product instances exist integrally where they have knowledge of the components that realize them, and conversely, the components that realize them have knowledge of the product instances that reside within them. Instances are aware when they are unfulfilled, and are capable of being fixed individually. Make it possible for instances to have individual and unique behaviour, and for customers to have their unique situations reflected in the system. When systems aren’t capable of enabling unique behaviour for instances, utilize proxies for in systems with that capability.<br /><br />Use the Language for Product Instances to reflect product instances and the customer’s situation and use the same Language for Product Instances to interpret the customer’s unique situation and install base. If the customer is experiencing problems with their product, permit customer agents to Changeable by Many within the Fortified Town. Enable Product Markers that describe the product instance’s performance, costs, and efficiency.');
+            </script>
+          </div>
+          <div class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8">
+            <div id="patternsModal2-content3" class="patterns-notes">
+            </div>
+            <script>
+              document.getElementById('patternsModal2-content3').innerHTML =
+                marked('<hr />*Ross Asby, the creator of the law of requisite variety, succintly summarized “variety can destroy variety”. Ashby, W.R. 1958, Requisite Variety and its implications for the control of complex systems, Cybernetica (Namur) Vo1 1, No 2, 1958.”<br /><br />For a thorough analysis of distributed state control, see Moseley, B., Marks, P., Out of the Tar Pit, 2006.<br /><br />From the opening lines of “The Second Coming by W.B. Yeats: Turning and turning in the widening gyre, The falcon cannot hear the falconer;Things fall apart; the centre cannot hold;*');
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="navbar navbar-default navbar-fixed-bottom navbar-shrink" role="navigation">
+      <div class="container">
+        <div class="pull-right">
+          <a href="#" data-content="#patternsModal1" class="load-different-content load-content-left">
+            <em>Adapting with Life</em> <span class="fa fa-chevron-left fa-lg fa-fw"></span></a>
+          <span class="fa fa-ellipsis-v fa-lg fa-fw"></span>
+          <a href="#" data-content="#patternsModal3" class="load-different-content load-content-right">
+            <span class="fa fa-chevron-right fa-lg fa-fw"></span> <em>Change History</em>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
