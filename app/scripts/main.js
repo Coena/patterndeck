@@ -50,6 +50,9 @@ $(document).ready(function(){
   };
   $('#main-nav a').click(scrollToPosition);
   
+  //store all original content data
+  var originalAllModalsContent = $('#allModalContent').html();
+  
   var clickedModalNavigationItem = false;
   function loadDifferentContent() {
   $('.load-different-content').each(function () {
@@ -80,6 +83,16 @@ $(document).ready(function(){
             //append new data
             $(openModal).find('.modal-content').html(contentToBeLoaded);
           }
+          $(openModal).on('hide.bs.modal', function () {
+            //get current content data
+            var existingContent = $('#allModalContent').html();
+            //verify is current content data is different from original content data
+            if(existingContent != originalAllModalsContent) {
+              //reload original modals content on modal close
+              $('#allModalContent').html(originalAllModalsContent);
+            }
+            loadDifferentContent();
+          });
           //show new data
           $(openModal).modal('show');
           //make generic nav function available to new content
