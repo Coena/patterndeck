@@ -27,7 +27,13 @@ html, body {
   background-color: $bg-color;
   color: $text-color;
   font-family: 'Roboto Slab';
-  font-weight: 400;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 300;
 }
 
 ::-moz-selection {
@@ -209,7 +215,7 @@ h1{
   @include set(line-height, (xs: 30px, sm: 50px, md: 50px, lg: 50px) );
   font-weight: 300;
   margin: 0;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   span {
     @include set(font-size, (xs: 18px, sm: 25px, md: 25px, lg: 25px) );
     @include set(line-height, (xs: 18px, sm: 25px, md: 25px, lg: 25px) );
