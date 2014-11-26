@@ -1,0 +1,74 @@
+<div class="patterns-modal modal fade" id="patternsModal18" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-4">
+            <div class="intro-text">
+              <hr>
+              <div class="intro-lead-in">Component Behavior</div>
+              <div class="intro-heading">Events Everywhere</div>
+              <img src="images/maturity-1.svg" width="20px">
+              <img src="images/maturity-1.svg" width="20px">
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-8">
+            <p class="text-center"><img src="images/patterns/patterndeck_placeholder.jpg" alt="Change History" class="img-responsive" /></p>
+            <div id="patternsModal18-content1">
+            </div>
+            <script>
+              document.getElementById('patternsModal18-content1').innerHTML =
+                marked('*Product instances produce immutable events to reflect things that have occurred at a certain place during a particular interval of time.*');
+            </script>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Services Section -->
+    <section>
+      <div class="container">
+        <div class="row text-left">
+          <div class="col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4">
+            <div id="patternsModal18-content2"></div>
+            <script>
+              document.getElementById('patternsModal18-content2').innerHTML =
+                marked('The Telecommunications industry has perhaps understood the role of Events in their architecture better than any other industry. Call Detail Records (CDRs), which are created by network elements after a telecommunications service has been utilized, have been used to record network usage for several decades. Historically, CDRs have been used to interface between Operations Support Systems (OSS) and Business Support Systems (BSS). OSS processes usually address concerns around operating the network itself, such as managing network inventories, network components (e.g. switches), and network faults. BSS processes usually address concerns around supporting customers and commercial offerings, obtaining and processing orders, processing bills, and collecting payments. OSS systems have historically been engineered to be highly distributed and fault tolerant, soft-real-time, operate non-stop, and support hot-swapping, where the system’s behaviour can be changed (within limits) without stopping the system. BSS systems have historically utilized a client-server architecture utilizing transactional storage, typically with relational databases. Given the differences in the paradigms used by OSS and BSS applications, it has been historically important to create a stable and fixed data interchange format within CDRs to reflect call activity. However, people are now doing a lot more than making calls, and network systems need to be capable of capturing a wide variety of events, and BSS applications need to be able process these events. The use of normalized data models, where data is separated and categorized based on its intention or behaviour, and strongly-typed data models, where distinct data exists for each specialized purpose, will result in an extremely high scale of complexity to the point of being unsustainable.<br /><br />Therefore the usage of any product should result in the creation of an event. Events should be created using de-normalized data models, where data is mostly unstructured with data elements possessing self-contained descriptors, and as weakly typed as possible, to the extent where all Events use the same object definition and contain a de-normalized data payload. The emergence of Software-Defined Networks, where network applications are built by software programs, further blur the historical distinction between BSS and OSS applications. Each application can consume Events, and create their own meaning around the Event. Events are stored in a single environment, and business intelligence and analytics can also be performed directly these events.<br /><br />Many products co-exist, and their Aware Instances produce events that can be consumed by a wide variety of applications.');
+            </script>
+          </div>
+          <div class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8">
+            <div id="patternsModal18-content3" class="patterns-notes">
+            </div>
+            <script>
+              document.getElementById('patternsModal18-content3').innerHTML =
+                marked('');
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="nav-fillslide">
+      <a class="prev load-different-content" href="#" data-content="#patternsModal17">
+        <span class="icon-wrap"><i class="fa fa-fe fa-long-arrow-left fa-2x"></i></span>
+        <div>
+          <h3>Everyone Cares</h3>
+          <span>Operations</span>
+          <img src="images/patterns/patterndeck_placeholder.jpg" alt="Previous thumb" />
+        </div>
+      </a>
+      <a class="next load-different-content" href="#" data-content="#patternsModal19">
+        <span class="icon-wrap"><i class="fa fa-fe fa-long-arrow-right fa-2x"></i></span>
+        <div>
+          <h3>Everyone’s Business</h3>
+          <span>Operations</span>
+          <img src="images/patterns/patterndeck_placeholder.jpg" alt="Next thumb" />
+        </div>
+      </a>
+    </nav>
+  </div>
+</div>
