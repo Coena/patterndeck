@@ -150,7 +150,9 @@
       position: absolute;
       width: 100%;
       height: 110%;
-      background: #fff;
+      background: radial-gradient(rgba(0,0,0,.05) 15%, transparent 16%) 0 0, radial-gradient(rgba(0,0,0,.05) 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+      background-color:#fff;
+      background-size:8px 8px;
       top: 0;
       left: 0;
       backface-visibility: hidden;
@@ -168,7 +170,9 @@
     top: 0;
     width: 270px;
     height: 118px;
-    background: #fff;
+    background: radial-gradient(rgba(0,0,0,.05) 15%, transparent 16%) 0 0, radial-gradient(rgba(0,0,0,.05) 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#fff;
+    background-size:8px 8px;
     transition: transform 0.3s;
     box-shadow: 0 0 3px rgba(0,0,0,.3);
     span {
@@ -242,6 +246,9 @@
 
 @media(min-width:768px) {
   .nav-fillslide {
+    .icon-wrap{
+      padding: 65px 10px;
+    }
     div {
       width: 440px;
       height: 158px;
