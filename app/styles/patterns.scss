@@ -96,7 +96,7 @@
     border-top: 4px solid #333;
   }
   section {
-    @include set(padding, (xs: 15px 15px 70px, sm: 20px 20px 70px, md: 30px 30px 70px, lg: 50px 50px 70px) );
+    @include set(padding, (xs: 15px, sm: 20px, md: 30px, lg: 50px) );
   }
   .text-center {
     .img-responsive {
