@@ -47,10 +47,10 @@
       padding: 20px;
       text-align: center;
       h4 {
-        font-size: 18px;
+        font-size: 20px;
       }
       p {
-        font-size: 14px;
+        font-size: 15px;
         font-style: italic;
         margin: 0;
       }
@@ -83,7 +83,7 @@
       }
       .intro-lead-in {
         text-shadow: 0 1px 1px rgba(0,0,0,0.1);
-        @include set(font-size, (xs: 16px, sm: 18px, md: 18px, lg: 18px) );
+        @include set(font-size, (xs: 18px, sm: 20px, md: 20px, lg: 20px) );
         @include set(line-height, (xs: 22px, sm: 40px, md: 40px, lg: 40px) );
         font-weight: 100;
         margin-bottom: 25px;
@@ -96,7 +96,7 @@
     border-top: 4px solid #333;
   }
   section {
-    @include set(padding, (xs: 15px 15px 70px, sm: 20px 20px 70px, md: 30px 30px 70px, lg: 50px 50px 70px) );
+    @include set(padding, (xs: 15px, sm: 20px, md: 30px, lg: 50px) );
   }
   .text-center {
     .img-responsive {
@@ -104,7 +104,7 @@
     }
   }
   .patterns-notes {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
   }
 }

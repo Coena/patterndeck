@@ -50,58 +50,10 @@ $(document).ready(function(){
   };
   $('#main-nav a').click(scrollToPosition);
   
-  //store all original content data
-  var originalAllModalsContent = $('#allModalContent').html();
-  
-  var clickedModalNavigationItem = false;
-  function loadDifferentContent() {
-  $('.load-different-content').each(function () {
-      $(this).on('click', function (e) {
-          e.preventDefault();
-          //get to be loaded div id
-          var toBeLoadedId = $(this).attr('data-content');
-          //copy to be loaded content
-          var contentToBeLoaded = $(toBeLoadedId).find('.modal-content').html();
-          //get the opened modal
-          var openModal = $(this).parents('.patterns-modal');
-          //get the open modal id
-          var openModalId = $(openModal).attr('id');
-          //store original content
-          var originalData = $(openModal).html();
-          if(!clickedModalNavigationItem){
-            $('#patternsModalHolder').html(originalData);
-            clickedModalNavigationItem = true;
-          }
-          //clear old data
-          $(openModal).removeData('bs.modal');
-          //verify if data needed is new or the original
-          if(toBeLoadedId === '#' + openModalId){
-            var originalDataContent = $('#patternsModalHolder').find('.modal-content').html();
-            //append original data it var request data-content is equal to the original modal id
-            $(openModal).find('.modal-content').html(originalDataContent);
-          } else {
-            //append new data
-            $(openModal).find('.modal-content').html(contentToBeLoaded);
-          }
-          $(openModal).on('hide.bs.modal', function () {
-            //get current content data
-            var existingContent = $('#allModalContent').html();
-            //verify is current content data is different from original content data
-            if(existingContent != originalAllModalsContent) {
-              //reload original modals content on modal close
-              $('#allModalContent').html(originalAllModalsContent);
-            }
-            loadDifferentContent();
-          });
-          //show new data
-          $(openModal).modal('show');
-          //make generic nav function available to new content
-          loadDifferentContent();
-        });
-    });
-  }
-
-  loadDifferentContent();
+  $('.close-modal').click(function(){
+     window.location=$(this).find('a').attr('href');
+     return false;
+  });
   
 });
 
