@@ -288,18 +288,22 @@ h1{
 }
 
 .greenBox {
-  color: green;
+  color: #1E5F29;
 }
 
 .orangeBox {
-  color: orange;
+  color: #F68B28;
 }
 
 .yellowBox {
-  color: yellow;
+  color: #F1E532;
 }
 
 .blueBox {
-  color: blue;
+  color: #215EAC;
+}
+
+.img-changeable-dimensions {
+  @include set(width, (xs: 90%, sm: 80%, md: 60%, lg: 50%) );
 }
 
