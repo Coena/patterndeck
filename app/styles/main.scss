@@ -250,6 +250,16 @@ h1{
   .pattern{
     transform-style: preserve-3d;
   }
+  .whiteLink {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.4;
+    display: block;
+    margin-top: 10px;
+    &:hover, &:active {
+      color: rgba(255,255,255,0.7)
+    }
+  }
 }
 
 #overview, #introduction {

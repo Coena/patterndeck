@@ -1,0 +1,42 @@
+<div class="patterns-modal">
+  <div class="modal-content">
+    <div class="close-modal">
+      <a href="index.html"></a>
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-5 col-md-4">
+            <div class="intro-text">
+              <hr>
+              <div class="intro-heading">Recent updates</div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-7 col-md-8">
+            <p class="text-center"><img src="images/patterns/patterndeck_placeholder.jpg" alt="Introduction" class="img-responsive" /></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Services Section -->
+    <section>
+      <div class="container">
+        <div class="row text-left">
+          <div class="col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4">
+            <div id="recent-updates-content1"></div>
+            <script>
+              document.getElementById('recent-updates-content1').innerHTML =
+                marked('###Recent Changes 0.3.5\n\nchanged [Kitchen Garden](kitchen-garden.html)\n\nadded placeholders for [Coherent Workspace](coherent-workspace.html), [Experience Store](experience-store.html), [Internal Bazaar](internal-bazaar.html)');
+            </script>
+          </div>
+          <div class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{{>footer}}
