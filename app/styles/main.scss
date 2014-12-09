@@ -226,6 +226,20 @@ h1{
   }
 }
 
+.btn-custom {
+  padding: 17px 40px;
+  margin-top: 10px;
+  border-color: #00259a;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #00259a;
+  &:hover, &:active {
+    color: rgba(255,255,255,0.7);
+  }
+}
 
 #home {
   text-align: center;
@@ -236,20 +250,9 @@ h1{
   .pattern{
     transform-style: preserve-3d;
   }
-  .btn-xl {
-    padding: 17px 40px;
-    margin-top: 10px;
-    border-color: #00259a;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 300;
-    color: #fff;
-    background-color: #00259a;
-  }
 }
 
-#overview {
+#overview, #introduction {
   .pattern{
     background: url(../images/pattern-1.svg) center center;
     background-size: 63px 63px;
@@ -275,4 +278,28 @@ h1{
   }
 }
 
+#introduction {
+  .pattern {
+    background: #fff;
+  }
+  .section-background {
+    @include set(height, (xs: 250px, sm: 300px, md: 350px, lg: 400px) );
+  }
+}
+
+.greenBox {
+  color: green;
+}
+
+.orangeBox {
+  color: orange;
+}
+
+.yellowBox {
+  color: yellow;
+}
+
+.blueBox {
+  color: blue;
+}
 
