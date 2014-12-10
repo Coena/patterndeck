@@ -229,13 +229,13 @@ h1{
 .btn-custom {
   padding: 17px 40px;
   margin-top: 10px;
-  border-color: #00259a;
+  border-color: #3c3c49;
   border-radius: 5px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 300;
   color: #fff;
-  background-color: #00259a;
+  background-color: #3c3c49;
   &:hover, &:active {
     color: rgba(255,255,255,0.7);
   }
@@ -293,7 +293,15 @@ h1{
     background: #fff;
   }
   .section-background {
-    @include set(height, (xs: 250px, sm: 300px, md: 350px, lg: 400px) );
+    height: 45%;
+    background: url(../images/introductionimage.jpg) no-repeat top left;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 2px 8px #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transform-style: preserve-3d;
+    @include set(height, (xs: 125px, sm: 150px, md: 175px, lg: 200px) );
   }
 }
 
