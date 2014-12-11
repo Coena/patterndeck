@@ -226,6 +226,20 @@ h1{
   }
 }
 
+.btn-custom {
+  padding: 17px 40px;
+  margin-top: 10px;
+  border-color: #3c3c49;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  background-color: #3c3c49;
+  &:hover, &:active {
+    color: rgba(255,255,255,0.7);
+  }
+}
 
 #home {
   text-align: center;
@@ -236,20 +250,19 @@ h1{
   .pattern{
     transform-style: preserve-3d;
   }
-  .btn-xl {
-    padding: 17px 40px;
-    margin-top: 10px;
-    border-color: #00259a;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 300;
+  .whiteLink {
+    font-size: 16px;
     color: #fff;
-    background-color: #00259a;
+    line-height: 1.4;
+    display: block;
+    margin-top: 10px;
+    &:hover, &:active {
+      color: rgba(255,255,255,0.7)
+    }
   }
 }
 
-#overview {
+#overview, #introduction {
   .pattern{
     background: url(../images/pattern-1.svg) center center;
     background-size: 63px 63px;
@@ -275,4 +288,40 @@ h1{
   }
 }
 
+#introduction {
+  .pattern {
+    background: #fff;
+  }
+  .section-background {
+    height: 45%;
+    background: url(../images/introductionimage.jpg) no-repeat top left;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 2px 8px #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    transform-style: preserve-3d;
+    @include set(height, (xs: 125px, sm: 150px, md: 175px, lg: 200px) );
+  }
+}
+
+.greenBox {
+  color: #1E5F29;
+}
+
+.orangeBox {
+  color: #F68B28;
+}
+
+.yellowBox {
+  color: #F1E532;
+}
+
+.blueBox {
+  color: #215EAC;
+}
+
+.img-changeable-dimensions {
+  @include set(width, (xs: 90%, sm: 80%, md: 60%, lg: 50%) );
+}
 
