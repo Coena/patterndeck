@@ -55,6 +55,27 @@ $(document).ready(function(){
      return false;
   });
   
+  
+  $('#mixedContent').smoothDivScroll({
+		hotSpotScrolling: false,
+		touchScrolling: true,
+    mousewheelScrolling: 'horizontal'
+	});
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('.row-offcanvas').toggleClass('active');
+  });
+  
+  $('a.scroll-horizontal').click(function() {
+      var href = $.attr(this, 'href');
+      $('#mixedContent').animate({
+          scrollLeft: $(href).offset().left + 1
+      }, 1500, 'swing', function () {
+          window.location.hash = href;
+      });
+  });
+
+  
 });
 
 

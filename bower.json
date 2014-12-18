@@ -4,11 +4,14 @@
   "dependencies": {
     "bootstrap-sass-official": "~3.2.0",
     "modernizr": "~2.8.2",
-    "font-awesome": "~4.2.0"
+    "font-awesome": "~4.2.0",
+    "jquery.kinetic": "~2.0.5",
+    "jquery-ui": "~1.11.2"
   },
   "devDependencies": {
     "marked": "~0.3.2",
     "roboto-slab-fontface": "*",
-    "font-awesome": "~4.2.0"
+    "font-awesome": "~4.2.0",
+    "jquery-mousewheel": "~3.1.12"
   }
 }
