@@ -59,20 +59,31 @@ $(document).ready(function(){
   $('#mixedContent').smoothDivScroll({
 		hotSpotScrolling: false,
 		touchScrolling: true,
-    mousewheelScrolling: 'horizontal'
+    mousewheelScrolling: 'horizontal',
+    scrollToAnimationDuration: 1200,
+    scrollToEasingFunction: 'swing'
+    
 	});
   
   $('[data-toggle="offcanvas"]').click(function () {
     $('.row-offcanvas').toggleClass('active');
   });
   
-  $('a.scroll-horizontal').click(function() {
-      var href = $.attr(this, 'href');
-      $('#mixedContent').animate({
-          scrollLeft: $(href).offset().left + 1
-      }, 1500, 'swing', function () {
-          window.location.hash = href;
-      });
+//  $('a.scroll-horizontal').click(function() {
+//      var href = $.attr(this, 'href');
+//      $('#mixedContent').animate({
+//          scrollLeft: $(href).offset().left + 1
+//      }, 1500, 'swing', function () {
+//          window.location.hash = href;
+//      });
+//  });
+  
+  $('.scroll-horizontal').each(function(){
+    $(this).on('click', function(e){
+      e.preventDefault();
+      var jumpToVal = $(this).attr('data-jump-to');
+      $('#mixedContent').smoothDivScroll('scrollToElement', 'id', jumpToVal);
+    });
   });
 
   
