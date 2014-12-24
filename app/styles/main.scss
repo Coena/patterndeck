@@ -79,79 +79,6 @@ body {
   }
 }
 
-/* Bootstrap overwrite */
-.navbar-default {
-  border-color: transparent;
-  background-color: #222;
-  .navbar-brand {
-    margin-top: -17px;
-    &:hover, &:focus, &:active, &.active {
-      color: #6666cc;
-    }
-  }
-  .navbar-collapse {
-    border-color: rgba(255, 255, 255, 0.02);
-  }
-  .navbar-toggle {
-    border-color: #6666cc;
-    background-color: #6666cc;
-    .icon-bar {
-      background-color: #fff;
-    }
-    &:hover, &:focus {
-      background-color: #6666cc;
-    }
-  }
-  .nav {
-    li {
-      a {
-        text-transform: uppercase;
-        font-weight: 300;
-        letter-spacing: 1px;
-        color: #fff;
-        text-shadow: 1px 2px 8px #000;
-        &:hover, &:focus {
-          outline: 0;
-          color: #cbcbd4;
-        }
-      }
-    }
-  }
-  .navbar-nav > .active > a {
-    border-radius: 0;
-    color: #fff;
-    background-color: #6666cc;
-    &:hover, &:focus {
-      color: #fff;
-      background-color: #cbcbd4;
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar-default {
-    padding: 25px 0;
-    border: 0;
-    background-color: transparent;
-    transition: padding .3s;
-    .navbar-brand {
-      font-size: 2em;
-      transition: all .3s;
-    }
-    .navbar-nav > .active > a {
-      border-radius: 3px;
-    }
-    &.navbar-shrink {
-      padding: 10px 0;
-      background: linear-gradient(rgba(25, 25, 25, 0.75) 0%, rgba(15, 15, 15, 0.9) 100%);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-      .navbar-brand {
-        font-size: 1.5em;
-      }
-    }
-  }
-}
-
 section {
   min-height: 100%;
   position: relative;
@@ -247,28 +174,8 @@ h1 {
   }
 }
 
-#home {
-  text-align: center;
-  color: #fff;
-  background: url(../images/home1.jpg) no-repeat center center;
-  background-size: cover;
-  text-shadow: 1px 2px 8px #000;
-  .pattern {
-    transform-style: preserve-3d;
-  }
-  .whiteLink {
-    font-size: 16px;
-    color: #fff;
-    line-height: 1.4;
-    display: block;
-    margin-top: 10px;
-    &:hover, &:active {
-      color: rgba(255, 255, 255, 0.7);
-    }
-  }
-}
-
-#overview, #introduction {
+#overview {
+  width: calc(100% - 75px);
   .pattern {
     background: url(../images/pattern-1.svg) center center;
     background-size: 63px 63px;
@@ -284,30 +191,14 @@ h1 {
     transform-style: preserve-3d;
   }
   .container {
-    @include set(padding-top, (xs: 20px, sm: 30px, md: 40px, lg: 50px));
+    @include set(padding, (xs: 20px 0 30px, sm: 30px 0, md: 40px 0, lg: 50px 0));
     height: 55%;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     p {
       font-size: 16px;
       line-height: 1.4;
     }
-  }
-}
-
-#introduction {
-  .pattern {
-    background: #fff;
-  }
-  .section-background {
-    height: 45%;
-    background: url(../images/introductionimage.jpg) no-repeat top left;
-    background-size: cover;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 2px 8px #000;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    transform-style: preserve-3d;
-    @include set(height, (xs: 125px, sm: 150px, md: 175px, lg: 200px));
   }
 }
 
@@ -358,7 +249,7 @@ div.scrollableArea {
     float: left;
     display: block;
     height: 100%;
-    width: 450px;
+    @include set(width, (xs: 300px, sm: 400px, md: 450px, lg: 450px));
     background: #edeeee;
     border: 0;
     padding: 0;
@@ -368,7 +259,7 @@ div.scrollableArea {
     .image-container{
       position: relative;
       width: 100%;
-      height: 250px;
+      @include set(height, (xs: 150px, sm: 200px, md: 250px, lg: 250px));
       overflow: hidden;
       margin-bottom: 10px;
       img {
@@ -377,7 +268,7 @@ div.scrollableArea {
         left: 50%;
         min-width: 100%;
         min-height: 100%;
-        max-height: 270px;
+        @include set(max-height, (xs: 170px, sm: 220px, md: 270px, lg: 270px));
         transform: translateX(-50%) translateY(-50%);
       }
       h2 {
@@ -405,6 +296,7 @@ div.scrollableArea {
       overflow-x: hidden;
       overflow-y: auto;
       height: calc(100% - 260px);
+      @include set(height, (xs: calc(100% - 160px), sm: calc(100% - 210px), md: calc(100% - 260px), lg: calc(100% - 260px)));
     }
   }
 }
