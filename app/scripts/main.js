@@ -83,8 +83,18 @@ $(document).ready(function(){
       e.preventDefault();
       var jumpToVal = $(this).attr('data-jump-to');
       $('#mixedContent').smoothDivScroll('scrollToElement', 'id', jumpToVal);
+      resetSubMenu();
+      $(this).find('i').toggleClass('fa-chevron-up fa-chevron-down');
+      $(this).next('.sub-menu').toggleClass('hidden');
     });
   });
+  
+  function resetSubMenu() {
+    $('.scroll-horizontal').each(function(){
+      $(this).find('i').removeClass('fa-chevron-up').addClass('fa-chevron-down');
+      $(this).next('.sub-menu').addClass('hidden');
+    });
+  }
 
   
 });

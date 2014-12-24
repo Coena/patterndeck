@@ -451,6 +451,21 @@ div.scrollableArea {
         line-height: 55px;
         transition: all .25s ease-out;
       }
+      .sub-menu {
+        a {
+          height: 35px;
+          line-height: 35px;
+          transition: all .25s ease-out;
+          border-top: 1px solid rgba(255,255,255,0.2);
+          border-bottom: 1px solid rgba(0,0,0,0.5);
+          &:last-of-type {
+            border-bottom: 0;
+          }
+          &:nth-of-type(1) {
+            border-top: 0;
+          }
+        }
+      }
     }
     #mixedContent {
       @include set(width, (xs: 10%, sm: calc(100% - 300px), md: calc(100% - 300px), lg: calc(100% - 300px)));
@@ -469,7 +484,8 @@ div.scrollableArea {
     opacity: 0;
   }
   ul {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: calc(100% - 92px);
     margin: 0;
   }
@@ -489,14 +505,30 @@ div.scrollableArea {
       display: inline-block;
       height: 5px;
       line-height: 5px;
+      width: 100%;
+      position: relative;
       &:hover, &:focus {
         color: #fff;
         text-decoration: none;
+      }
+      i {
+        position: absolute;
+        right: 1px;
+        top: 20px;
       }
     }
     img {
       margin: -2px 5px 0 0;
       border-radius: 3px;
+    }
+    .sub-menu {
+      padding-bottom: 15px;
+      a {
+        display: block;
+        margin: 0 20px 0 40px;
+        padding-left: 10px;
+        width: calc(100% - 70px);
+      }
     }
   }
   #logo-holder {
