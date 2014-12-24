@@ -445,6 +445,13 @@ div.scrollableArea {
       opacity: 1;
       transition: all .25s ease-out;
     }
+    li {
+      a {
+        height: 55px;
+        line-height: 55px;
+        transition: all .25s ease-out;
+      }
+    }
     #mixedContent {
       @include set(width, (xs: 10%, sm: calc(100% - 300px), md: calc(100% - 300px), lg: calc(100% - 300px)));
     }
@@ -455,6 +462,7 @@ div.scrollableArea {
   position: absolute;
   top: 0;
   bottom: 0;
+  height: 100%;
   @include set(width, (xs: 90%, sm: 300px, md: 300px, lg: 300px));
   background: url(../images/black-pattern.png) repeat top left;
   .sidebar-nav {
@@ -462,10 +470,10 @@ div.scrollableArea {
   }
   ul {
     overflow: auto;
+    height: calc(100% - 92px);
+    margin: 0;
   }
   li {
-    height: 55px;
-    line-height: 55px;
     padding: 0 0 0 35px;
     margin: 0 10px 0 20px;
     border-top: 1px solid rgba(255,255,255,0.2);
@@ -478,6 +486,9 @@ div.scrollableArea {
     }
     a {
       color: rgba(255,255,255,0.7);
+      display: inline-block;
+      height: 5px;
+      line-height: 5px;
       &:hover, &:focus {
         color: #fff;
         text-decoration: none;
