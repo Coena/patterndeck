@@ -2,15 +2,26 @@
 @import 'variables';
 
 #patterns {
+  height: 100%;
+  overflow: hidden;
+  width: calc(100% - 75px);
+  .container {
+    height: 100%;
+  }
   .section-title {
-    height: 240px;
+    height: 160px;
     margin:0;
     transform-style: preserve-3d;
     text-align: center;
     h1 {
-      transform: translateY(-10%);
+      transform: translateY(-50%);
       text-shadow: none;
     }
+  }
+  .row {
+    height: calc(100% - 170px);
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .patterns-link {
     display: block;
