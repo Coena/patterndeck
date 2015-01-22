@@ -12,11 +12,14 @@ $(document).ready(function(){
   });
   
   $('#mixedContent').smoothDivScroll({
-		hotSpotScrolling: false,
+		hotSpotScrolling: true,
 		touchScrolling: true,
-    mousewheelScrolling: 'horizontal',
+    mousewheelScrolling: 'allDirections',
     scrollToAnimationDuration: 1200,
-    scrollToEasingFunction: 'swing'
+    scrollToEasingFunction: 'swing',
+    hiddenOnStart: false,
+    visibleHotSpotBackgrounds: 'hover',
+    manualContinuousScrolling: false
 	});
   
   $('[data-toggle="offcanvas"]').click(function () {

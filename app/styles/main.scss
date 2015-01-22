@@ -458,3 +458,43 @@ div.scrollableArea {
     }
   }
 }
+
+.scrollingHotSpotRight {
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  right: 0;
+  top: calc(50% - 40px);
+  width: 80px;
+  z-index: 200;
+  height: 80px;
+  &:before {
+    position: absolute;
+    content: '\f054';
+    font-family: 'FontAwesome';
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+  }
+}
+
+.scrollingHotSpotLeft {
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  left: 0;
+  top: calc(50% - 40px);
+  width: 80px;
+  z-index: 200;
+  height: 80px;
+  &:before {
+    position: absolute;
+    content: '\f053';
+    font-family: 'FontAwesome';
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+  }
+}
