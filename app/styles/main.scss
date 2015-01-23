@@ -102,7 +102,7 @@ footer {
     margin: 0;
     padding: 4px 8px;
     font-size: 12px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(255, 255, 255, 0.8);
     color: #111;
   }
 }
@@ -255,23 +255,23 @@ div.scrollableArea {
     padding: 0;
     margin: 0;
     user-select: none;
-    box-shadow: inset 7px 0 10px -5px rgba(0,0,0,0.2);
-    .image-container{
+    box-shadow: inset 7px 0 10px -5px rgba(0, 0, 0, 0.2);
+    .image-container {
       position: relative;
       width: 100%;
       @include set(height, (xs: 150px, sm: 200px, md: 250px, lg: 250px));
       overflow: hidden;
       margin-bottom: 10px;
       z-index: 10;
-        &:before{
-            display: block;
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            box-shadow: inset 7px 0 10px -5px rgba(0,0,0,0.2);
-            z-index: 20;
-        }
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-shadow: inset 7px 0 10px -5px rgba(0, 0, 0, 0.2);
+        z-index: 20;
+      }
       img {
         position: absolute;
         top: 50%;
@@ -286,7 +286,7 @@ div.scrollableArea {
         bottom: 20px;
         right: 20px;
         color: #fff;
-        text-shadow: 0 1px 1px rgba(0,0,0,0.8);
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
       }
     }
     p {
@@ -298,9 +298,9 @@ div.scrollableArea {
       padding: 0 70px 10px;
     }
     hr {
-      border-bottom: 1px solid rgba(255,255,255,0.8);
-      border-top: 1px solid rgba(0,0,0,0.2);
-      margin:20px 70px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+      margin: 20px 70px;
     }
     .content-container {
       overflow-x: hidden;
@@ -308,33 +308,6 @@ div.scrollableArea {
       height: calc(100% - 260px);
       @include set(height, (xs: calc(100% - 160px), sm: calc(100% - 210px), md: calc(100% - 260px), lg: calc(100% - 260px)));
     }
-  &::-webkit-scrollbar {
-  width: 10px;
-  height: 5px;
-  background-color: transparant;
-  -webkit-border-radius: 0;
-}
-
-  &::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  -webkit-border-radius: 10px;
-  border: 2.5px solid transparant;
-  border-top-width: 5px;
-  border-bottom-width: 5px;
-  &:hover, &:active {
-    background-color: #909094;
-  }
-}
-      &:hover{
-      &::-webkit-scrollbar {
-  background-color: #d2d2d5;
-}
-
-  &::-webkit-scrollbar-thumb {
-  background-color: #a4a4a9;
-  border: 2.5px solid #d2d2d5;
-}
-      }
   }
 }
 
@@ -391,8 +364,8 @@ div.scrollableArea {
           height: 35px;
           line-height: 35px;
           transition: all .25s ease-out;
-          border-top: 1px solid rgba(255,255,255,0.2);
-          border-bottom: 1px solid rgba(0,0,0,0.5);
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
           &:last-of-type {
             border-bottom: 0;
           }
@@ -427,8 +400,8 @@ div.scrollableArea {
   li {
     padding: 0 0 0 35px;
     margin: 0 10px 0 20px;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(0,0,0,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     &:last-of-type {
       border-bottom: 0;
     }
@@ -436,7 +409,7 @@ div.scrollableArea {
       border-top: 0;
     }
     a {
-      color: rgba(255,255,255,0.7);
+      color: rgba(255, 255, 255, 0.7);
       display: inline-block;
       height: 5px;
       line-height: 5px;
@@ -469,7 +442,7 @@ div.scrollableArea {
   #logo-holder {
     height: 77px;
     position: relative;
-    margin:0 0 15px;
+    margin: 0 0 15px;
     border: 0;
   }
   #logo {
