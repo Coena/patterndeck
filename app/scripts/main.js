@@ -56,15 +56,25 @@ $(document).ready(function(){
     });
   }
 
-  
+  stickyTitleScroller();
 });
 
-$(window).scroll(function() {    
-    var scroll = $('.sticky-title-controller').scrollTop();
-    if (scroll >= 5) {
+function stickyTitleScroller() {
+  $('.sticky-title-controller').bind('scroll', function(){
+    var scroll = $(this).scrollTop();
+    if (scroll >= 10) {
         $('.sticky-title').addClass('sticky-title-small');
+    } else {
+      $('.sticky-title').removeClass('sticky-title-small');
     }
-});
+    
+    if ($('.sticky-title').hasClass('sticky-title-small')) {
+      $('.sticky-title-controller').css('height', 'calc(100% - 60px)');
+    } else {
+      $('.sticky-title-controller').css('height', 'calc(100% - 170px)');
+    }
+  });
+}
 
 
 
