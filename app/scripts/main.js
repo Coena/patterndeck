@@ -59,6 +59,13 @@ $(document).ready(function(){
   
 });
 
+$(window).scroll(function() {    
+    var scroll = $('.sticky-title-controller').scrollTop();
+    if (scroll >= 5) {
+        $('.sticky-title').addClass('sticky-title-small');
+    }
+});
+
 
 
 
