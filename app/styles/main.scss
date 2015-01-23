@@ -308,6 +308,33 @@ div.scrollableArea {
       height: calc(100% - 260px);
       @include set(height, (xs: calc(100% - 160px), sm: calc(100% - 210px), md: calc(100% - 260px), lg: calc(100% - 260px)));
     }
+  &::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+  background-color: transparant;
+  -webkit-border-radius: 0;
+}
+
+  &::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  -webkit-border-radius: 10px;
+  border: 2.5px solid transparant;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  &:hover, &:active {
+    background-color: #909094;
+  }
+}
+      &:hover{
+      &::-webkit-scrollbar {
+  background-color: #d2d2d5;
+}
+
+  &::-webkit-scrollbar-thumb {
+  background-color: #a4a4a9;
+  border: 2.5px solid #d2d2d5;
+}
+      }
   }
 }
 
