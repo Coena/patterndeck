@@ -15,7 +15,7 @@ $(document).ready(function(){
 		hotSpotScrolling: true,
 		touchScrolling: true,
     mousewheelScrolling: 'allDirections',
-    scrollToAnimationDuration: 1200,
+    scrollToAnimationDuration: 400,
     scrollToEasingFunction: 'swing',
     hiddenOnStart: false,
     visibleHotSpotBackgrounds: 'hover',
