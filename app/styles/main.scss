@@ -364,8 +364,6 @@ div.scrollableArea {
           height: 35px;
           line-height: 35px;
           transition: all .25s ease-out;
-          border-top: 1px solid rgba(255, 255, 255, 0.2);
-          border-bottom: 1px solid rgba(0, 0, 0, 0.5);
           &:last-of-type {
             border-bottom: 0;
           }
