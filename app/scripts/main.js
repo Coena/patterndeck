@@ -12,11 +12,14 @@ $(document).ready(function(){
   });
   
   $('#mixedContent').smoothDivScroll({
-		hotSpotScrolling: false,
+		hotSpotScrolling: true,
 		touchScrolling: true,
-    mousewheelScrolling: 'horizontal',
-    scrollToAnimationDuration: 1200,
-    scrollToEasingFunction: 'swing'
+    mousewheelScrolling: 'allDirections',
+    scrollToAnimationDuration: 400,
+    scrollToEasingFunction: 'swing',
+    hiddenOnStart: false,
+    visibleHotSpotBackgrounds: 'hover',
+    manualContinuousScrolling: false
 	});
   
   $('[data-toggle="offcanvas"]').click(function () {
@@ -53,8 +56,25 @@ $(document).ready(function(){
     });
   }
 
-  
+  stickyTitleScroller();
 });
+
+function stickyTitleScroller() {
+  $('.sticky-title-controller').bind('scroll', function(){
+    var scroll = $(this).scrollTop();
+    if (scroll >= 10) {
+        $('.sticky-title').addClass('sticky-title-small');
+    } else {
+      $('.sticky-title').removeClass('sticky-title-small');
+    }
+    
+    if ($('.sticky-title').hasClass('sticky-title-small')) {
+      $('.sticky-title-controller').css('height', 'calc(100% - 60px)');
+    } else {
+      $('.sticky-title-controller').css('height', 'calc(100% - 170px)');
+    }
+  });
+}
 
 
 

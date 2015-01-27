@@ -288,6 +288,19 @@
   }
 }
 
+.sticky-title-small {
+  height: 50px !important;
+  transform: none;
+  top: 0;
+  h1 {
+    font-size: 20px;
+    span {
+      font-size: 16px;
+      margin-right: 20px;
+      display: inline-block;
+    }
+  }
+}
 
 
 
