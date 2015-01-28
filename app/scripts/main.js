@@ -69,9 +69,9 @@ function stickyTitleScroller() {
     }
     
     if ($('.sticky-title').hasClass('sticky-title-small')) {
-      $('.sticky-title-controller').css('height', 'calc(100% - 60px)');
+      $('.sticky-title-controller').css('height', 'calc(100% - 70px)');
     } else {
-      $('.sticky-title-controller').css('height', 'calc(100% - 170px)');
+      $('.sticky-title-controller').css('height', 'calc(100% - 180px)');
     }
   });
 }
