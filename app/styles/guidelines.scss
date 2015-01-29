@@ -129,6 +129,8 @@ h2 {
 .sideb-nav li a:active,
 .sideb-nav li a:focus {
     text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
 }
 
 .sideb-nav > .sideb-brand {
