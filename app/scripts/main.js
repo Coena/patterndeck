@@ -74,7 +74,13 @@ function stickyTitleScroller() {
       $('.sticky-title-controller').css('height', 'calc(100% - 180px)');
     }
   });
+    
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
 }
+
 
 
 
