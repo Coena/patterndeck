@@ -14,6 +14,11 @@
     padding-left: 250px;
 }
 
+.navbar-default {
+background-color: #333333;
+border-color: #666666;
+}
+    
 #sideb-wrapper {
     z-index: 1000;
     position: fixed;
@@ -45,7 +50,7 @@
 
 
 .jumbotron {
-padding: 75px;
+padding: 10px 10px 10px 75px;
 margin-bottom: 30px;
 color: inherit;
 background-color: #eeeeee;
