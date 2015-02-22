@@ -48,7 +48,14 @@ border-color: #666666;
     margin-right: -250px;
 }
 
+.carousel-inner img {
+  margin: auto;
+    width: 100%;
+}
 
+.carousel-indicators {
+bottom: 0px;
+}
 
 .jumbotron {
 padding: 10px 10px 10px 75px;
