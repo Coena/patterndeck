@@ -1,0 +1,26 @@
+@import 'mixins';
+@import 'variables';
+
+#custom {
+  }
+  .post-heading {
+    h1 {
+      transform: translateY(-50%);
+      text-shadow: none;
+      font-size: 36px;
+      font-weight: 700;
+    }
+}
+
+    .patterns-notes {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+          hr {
+    margin: 0 0 6px;
+    border: 0;
+    border-top: 4px solid #333;
+          }
+  }
+
+
