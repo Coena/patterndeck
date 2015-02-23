@@ -50,7 +50,9 @@ border-color: #666666;
 
 .carousel-inner img {
   margin: auto;
-    width: 100%;
+  width: 100%;
+  min-height: 250px;
+  max-height: 300px;
 }
 
 .carousel-indicators {
