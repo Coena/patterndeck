@@ -4,7 +4,10 @@
 #patterns {
   height: 100%;
   overflow: hidden;
-  margin: 50px;
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
 
 
   .patterns-link {
@@ -12,11 +15,12 @@
     position: relative;
     width: 100%;
     max-width: 400px;
-    height: 280px;
+    min-height: 290px;
     overflow: hidden;
     background-color: #fff;
     margin:0 auto 20px;
     color: #797984;
+    border: 1px solid #eeeeee;
     .patterns-hover {
       position: absolute;
       width: 100%;
@@ -41,19 +45,18 @@
       margin: 0 auto;
       padding: 20px;
       text-align: center;
-      background-color: #f3f3f3;
+      background-color: #ffffff;
       h4 {
         font-size: 20px;
       }
       p {
-        font-size: 15px;
-        font-style: italic;
+        font-size: 14px;
         margin: 0;
+        text-align: left;
       }
     }
   }
 
-}
 
 
 
