@@ -4,7 +4,38 @@
 #patterns {
   height: 100%;
   overflow: hidden;
-  margin: 50px;
+  padding: 50px;
+  background-color: #f8f8f8;
+}
+
+  .post-heading {
+    h1 {
+      transform: translateY(-50%);
+      text-shadow: none;
+      font-size: 36px;
+      font-weight: 700;
+      color: #000;
+    }
+    h2 {
+      color: #000;
+    }
+    h4 {
+      margin-top: 15px;
+      margin-bottom: 35px;
+    }
+}
+
+    .patterns-notes {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: right;
+          hr {
+    margin: 0 0 6px;
+    border: 0;
+    border-top: 4px solid #333;
+          }
+  }
+
 
 
   .patterns-link {
@@ -12,11 +43,12 @@
     position: relative;
     width: 100%;
     max-width: 400px;
-    height: 280px;
+    min-height: 290px;
     overflow: hidden;
     background-color: #fff;
     margin:0 auto 20px;
     color: #797984;
+    border: 1px solid #eeeeee;
     .patterns-hover {
       position: absolute;
       width: 100%;
@@ -41,19 +73,31 @@
       margin: 0 auto;
       padding: 20px;
       text-align: center;
-      background-color: #f3f3f3;
+      background-color: #ffffff;
       h4 {
         font-size: 20px;
       }
       p {
-        font-size: 15px;
-        font-style: italic;
+        font-size: 14px;
         margin: 0;
+      }
+    }
+      .infoblock {
+      margin: 0 auto;
+      padding: 20px;
+      text-align: left;
+      background-color: #ffffff;
+      h4 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+        margin: 0;
+        text-align: left;
       }
     }
   }
 
-}
 
 
 
