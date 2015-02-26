@@ -1,46 +1,47 @@
-<div class="patterns-modal">
-  <div class="modal-content">
-    <div class="close-modal">
-	<a href="./connecting-life-stories.html"></a>
-      <div class="lr">
-        <div class="rl">
-        </div>
-      </div>
+<!-- Navigation -->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        <img alt="Brand" src="../images/patterndeck-logo.svg" width="40px" onerror="this.src='../images/patterndeck-logo.png'; this.onerror=null;"> Connecting Life | <small>A Pattern Language for Communication Networks</small> 
+      </a>
     </div>
+  </div>
+</nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
     <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-5 col-md-4">
-            <div class="intro-text">
-              <hr>
-              <div class="intro-heading">Connecting life</div>
-              </div>
-          </div>
-          <div class="col-xs-12 col-sm-7 col-md-8">
-            <p class="text-center"><img src="images/patterns/patterndeck_placeholder.jpg" alt="Introduction" class="img-responsive" /></p>
-            <div id="story-content1"></div>
-            <script>
-              document.getElementById('story-content1').innerHTML =
-                marked('');
-            </script>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- Services Section -->
-    <section>
-      <div class="container">
-        <div class="row text-left">
-          <div class="col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4">
-            <div id="story-content2"></div>
-            <script>
-              document.getElementById('story-content2').innerHTML =
-                marked('###Insight in purchase value\nI feel that **my bill is always too high**. I am never really sure why I am being charged so much. I want to be in control of my spending. I want to know **what I am spending up-front**. Today, I **don’t really understand** my bill when I get it at the end of the month. I spend too much time trying to remembering my **usage and correlating** it to my bill. The relationship between experiencing and paying for a service is too far apart.');
-            </script>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-md-offset-3 col-xs-10 col-xs-offset-1">
+                    <div class="post-heading">
+                        <h4>Story</h4>
+                        <h1>Insight in purchase value</h1>
+                        <span class="meta">
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-    </section>
-  </div>
-</div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                 
+                     <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-push-2 col-md-offset-1">
+                    <div id="patternsModal1-content1"></div>
+            <script>
+              document.getElementById('patternsModal1-content1').innerHTML =
+                marked('\nI feel that **my bill is always too high**. I am never really sure why I am being charged so much. I want to be in control of my spending. I want to know **what I am spending up-front**. Today, I **don’t really understand** my bill when I get it at the end of the month. I spend too much time trying to remembering my **usage and correlating** it to my bill. The relationship between experiencing and paying for a service is too far apart.');
+            </script>
+                </div>
+                                   
+        </div>
+    </article>
+
+    <!-- Footer -->
 {{>footer}}
